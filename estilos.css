@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text&family=Oswald:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cocktails-container{
+    display: flex !important;
+    box-sizing: border-box;
+    align-items: flex-start !important;
+    
+}
+
+.quote-card h3{
+    font-size: 24px;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
+
+.quote-card button{
+    width: 100px !important;
+    height: 25px !important;
+    background-color: white;
+    color: black !important;
+}
+
+.quote-card{
+    border: solid 3px rgb(232, 226, 226);
+    font-size: 14px;
+    color: white;
+    border-radius: 1.2rem;
+    margin: 1rem;
+    width: 350px !important;
+    height: 450px;
+    display: block !important;
+    align-content: center!important;
+    justify-content: center;
+}
+
+.quote-card p{
+    text-align: left;
+    margin-top: 1px !important;
+    padding: 1px !important;
+}
+
+.div-cantidad{
+    display: flex !important;
+    align-items: center;
+}
+
+.carrito-title{
+    color: white !important;
+    font-size: 14px;
+    margin-left: 100px;
+}
+
+.card-imgs{
+    width: auto;
+    height: 200px;
+    margin-bottom: 20px;
+    border: solid white 1px;
+    border-radius: 6px;
+}
+
+#show-cart{
+    font-size: 12px;
+    border: solid 3px !important;
+    box-shadow: gray 1px !important;
+    height: 50px;
+}
+#hide-cart{
+    font-size: 12px;
+    border: solid 3px !important;
+    box-shadow: gray 1px !important;
+    height: 50px;
+}
+
+#clean-cart{
+    font-size: 12px;
+    border: solid 3px !important;
+    box-shadow: gray 1px !important;
+    height: 50px;
+}
+
+.btn-anadir{
+    color: black !important;
+    margin-bottom: 20px !important;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+H6{
+    font-size: 104px !important;
+}
+
+.incard-tag{
+    border: solid 2px white;
+    border-radius: 6px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    justify-items: center;
+    margin: 3px;
+}
+
+body {
+  font-family: "Oswalt", sans-serif !important;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%);
+}
+
+
+
+.navbar {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 3px 20px rgb(57, 56, 51);
+}
+
+@media (max-width: 575px) {
+  .navbar-nav {
+    justify-content: end;
+    align-items: end;
+    background-color: rgba(0, 0, 0, 0.323)!important;
+    width: 100%;
+    margin: 0px !important;
+    padding-left: 50px !important;
+    box-sizing: border-box;
+  }
+}
+.logo-header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 5px;
+}
+
+.nav-link {
+  color: white !important;
+  transition: all 1s;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+  border: 0.5px solid white;
+  text-shadow: 1px 2px 2px hsl(0, 0%, 10%) !important;
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+  justify-content: end !important;
+}
+
+.jumbotron {
+    background-image: url(./multimedia/bar-truck1.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 450px;
+    width: 100%;
+    text-shadow: 2px 5px 5px #333;
+    color: white;
+    padding-top: 20px;
+    box-sizing: border-box !important;
+    font-size: 16px;
+    margin-top: 0px !important;
+  }
+  
+  @media (min-width: 920px) {
+    .jumbotron {
+      height: 1020px !important;
+      background-position-y: 15%;
+    }
+    .btn-primary {
+      margin-left: 30px;
+      margin-bottom: 30px !important;
+    }
+    .jumbotron div p {
+      margin-right: 250px;
+      margin-left: 30px;
+    }
+    .jumbotron div h1 {
+      margin-bottom: 20px;
+      margin-right: 250px;
+      margin-left: 30px;
+      margin-top: 0px;
+    }
+  }
+  @media (min-width: 700px) {
+    .jumbotron {
+      height: 550px !important;
+      padding-top: 50px !important;
+      padding-right: 150px !important;
+    }
+    .btn-primary {
+      margin-top: 35px !important;
+    }
+  }
+  @media (min-width: 850px) {
+    .txt-banner {
+      align-items: center !important;
+    }
+  }
+  .btn-primary {
+    border: solid 1px white !important;
+    margin-top: 50px;
+    background-color: rgba(31, 31, 31, 0.848);
+    box-shadow: 1px 5px 5px #333;
+  }
+  
+  h3.title-plans {
+    background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%);
+    height: 120px;
+    text-align: center;
+    display: flex;
+    color: white;
+    text-shadow: 2px 5px 5px #333;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    border-bottom: 1px solid white;
+    margin-bottom: 0px;
+  }
+  
+  .container-fluid.services {
+    margin-top: 120px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 100px !important;
+  }
+  
+  .block-1-3 {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white !important;
+  }
+  
+  .block-2 {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+  }
+  
+  div.row div h2 {
+    text-align: center;
+    padding-top: 5px !important;
+  }
+  div.row div p {
+    text-indent: 2cm;
+  }
+  
+  .services {
+    margin-top: 25px !important;
+  }
+  
+  .button-final {
+    text-align: center;
+  }
+  .button-final h1 {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .footer {
+    margin-top: 0px !important;
+    border-top: 0.2px solid white;
+    border-bottom: 0.2px solid white;
+    text-align: center;
+    justify-content: space-evenly;
+    vertical-align: center;
+  }
+  
+  .img-serv-1 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ bar\ trailer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 90%;
+    margin: 25px !important;
+    border: 0.01px solid white;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .p-sang {
+    padding: 10px;
+  }
+  
+  .title-serv {
+    color: white;
+    background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%);
+    height: 100px;
+    margin: 10px, 10px !important;
+    margin-bottom: 0px !important;
+  }
+  
+  h3.title-serv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 0.5px #7d7979;
+  }
+  
+  .img-serv-2 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ portable\ bar\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 90%;
+    margin: 25px !important;
+    border: 0.01px solid white;
+  }
+  .img-serv-2::after {
+    content: attr("top shelf cocktails");
+  }
+  
+  .b-s-2 {
+    background-color: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%) !important;
+  }
+  
+  .banner-serv {
+    background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%) !important;
+  }
+  
+  .img-about {
+    background-image: url(./multimedia/top\ dhelf\ drinks\ -\ bar\ rental.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 90%;
+    margin: 25px !important;
+    border: 0.01px solid white;
+  }
+  .img-about::after {
+    content: attr(best bartender service in miami);
+  }
+  
+  .black-bg {
+    background-color: black !important;
+  }
+  
+  .banner-about {
+    background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%);
+  }
+  
+  .btn-center {
+    justify-content: center !important;
+    display: flex !important;
+    width: 60%;
+    align-items: center;
+  }
+  
+  .btn:hover {
+    background-color: black !important;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline !important;
+    background-color: rgba(31, 31, 31, 0.848);
+    background-size: 50%;
+    border-radius: 20px;
+    transition: all 1s;
+  }
+  
+  .contenedor-gal {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: "img1 img1 img2 img3" "img4 img5 img2 img6" "img4 img7 img7 img8";
+    padding: 20px;
+    grid-gap: 15px;
+  }
+  
+  .item {
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    filter: grayscale(100%);
+    transition: all 1s;
+  }
+  .item:hover {
+    filter: grayscale(0%);
+    transition: all 1s;
+  }
+  
+  .item1 {
+    background-image: url(./multimedia/top\ dhelf\ drinks\ -\ bar\ rental.jpg);
+    grid-area: img1;
+    background-position-y: 10%;
+  }
+  
+  .item2 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ dario\ velasquez.jpg);
+    grid-area: img2;
+  }
+  
+  .item3 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ bar\ rental\ 2.jpg);
+    grid-area: img3;
+  }
+  
+  .item4 {
+    background-image: url(./multimedia/bar\ truck\ 1-129.jpg);
+    grid-area: img4;
+    background-position-x: 15%;
+    background-position: right;
+  }
+  
+  .item5 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ bartender\ services.jpg);
+    grid-area: img5;
+  }
+  
+  .item6 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ bar\ truck.jpg);
+    grid-area: img6;
+  }
+  
+  .item7 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ portable\ bar\ 2.jpg);
+    grid-area: img7;
+    background-position-y: 15%;
+  }
+  
+  .item8 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ portable\ bar\ 3.jpg);
+    grid-area: img8;
+  }
+  
+  .item9 {
+    background-image: url(./multimedia/top\ shelf\ drinks\ -\ bar\ trailer.jpg);
+    grid-area: img9;
+  }
+  
+  @media (max-width: 500px) {
+    .contenedor-gal {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 300px);
+      grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+    }
+  }
+  @media (min-width: 501px) {
+    .contenedor-gal {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 300px);
+      grid-template-areas: "img1 img2" "img3 img2" "img4 img5" "img6 img6" "img7 img8";
+    }
+  }
+  .txt-banner {
+    margin-top: 0px !important;
+    margin-bottom: 100px;
+  }
+  
+  .txt-banner-gal {
+    margin-top: 0px !important;
+    background: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%) !important;
+    border-radius: 0px !important;
+  }
+  .txt-banner-gal h1 {
+    margin-top: 80px;
+  }
+  .txt-banner-gal .btn {
+    margin-bottom: 100px !important;
+  }
+  
+  @media (min-width: 920px) {
+    .contenedor-gal {
+      width: 100%;
+      height: auto;
+      background-color: black;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 300px);
+      grid-template-areas: "img1 img1 img2 img3" "img4 img5 img2 img6" "img4 img7 img7 img8";
+      padding: 20px;
+      grid-gap: 15px;
+    }
+  }
+  .row-benefits {
+    margin-right: 20px !important;
+  }
+  
+  .row .g-3 {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .txt-form {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .container {
+    margin: 10px !important;
+    display: block !important;
+    justify-content: center;
+    align-items: center;
+    padding: 20px !important;
+  }
+  .container h1 {
+    background-image: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(344, 0%, 86%) 0%, hsl(344, 0%, 72%) 0%, hsl(344, 0%, 59%) 1%, hsl(344, 0%, 47%) 2%, hsl(344, 0%, 35%) 3%, hsl(344, 0%, 23%) 7%, hsl(344, 0%, 13%) 12%, hsl(0, 0%, 0%) 50%, hsl(344, 0%, 13%) 88%, hsl(344, 0%, 23%) 93%, hsl(344, 0%, 35%) 97%, hsl(344, 0%, 47%) 98%, hsl(344, 0%, 59%) 99%, hsl(344, 0%, 72%) 100%, hsl(344, 0%, 86%) 100%, hsl(0, 0%, 100%) 100%);
+    padding: 30px !important;
+    margin: 10px !important;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 20px !important;
+    text-align: center;
+  }
+  
+  .cont-form {
+    display: block;
+    justify-items: center !important;
+  }
+  
+  .ul_footer {
+    list-style-type: none;
+  }
+  .ul_footer a {
+    text-decoration: none;
+    color: white;
+  }
+  .required{
+    color: white;
+  }
+  /*# sourceMappingURL=estilos.css.map */
